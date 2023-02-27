@@ -282,7 +282,7 @@ body {
   font-size: 3rem;
 }
 .header__nav ul li:hover {
-  background: hsl(0deg, 0%, 50%);
+  background: hsl(0, 0%, 50%);
 }
 .header__nav ul li:hover a {
   color: #ffa700;
@@ -374,7 +374,8 @@ body {
   padding-right: 4rem;
 }
 .bannerText a {
-  margin-top: 2rem;
+  margin: 5rem;
+  margin-top: 5rem;
   color: #ffffff;
   padding: 10rem;
   padding: 1.2rem 1.5rem;
@@ -477,4 +478,70 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5rem;
   }
+}
+
+.bannerAboutme {
+  width: 100%;
+  position: relative;
+}
+.bannerAboutme_wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.bannerAboutme img {
+  width: 40rem;
+  height: 40rem;
+  margin: 4rem;
+}
+.bannerAboutme h2 {
+  font-size: 3rem;
+  color: #ffa700;
+}
+.bannerAboutme p {
+  text-align: justify;
+  padding: 4rem;
+}
+@media screen and (min-width: 970px) {
+  .bannerAboutme_wrapper {
+    justify-content: space-between;
+    flex-direction: unset;
+    background: none;
+    margin: 0;
+    position: relative;
+  }
+  .bannerAboutme img {
+    height: 40rem;
+    width: 40rem;
+  }
+  .bannerAboutme_Text {
+    max-width: 100%;
+    text-align: unset;
+    position: absolute;
+    -moz-columns: row;
+         columns: row;
+  }
+  .bannerAboutme h2 {
+    font-size: 5rem;
+  }
+  .bannerAboutme p {
+    width: 100%;
+    font-size: 2rem;
+  }
+}
+
+.latestTrend {
+  position: relative;
+  width: 100%;
+  background: #2b2b2b;
+}
+.latestTrend_wrapper {
+  display: flex;
+}
+.latestTrend h4 {
+  color: #ffa700;
+  font-size: 5rem;
+}
+.latestTrend p {
+  font-size: 2rem;
 }/*# sourceMappingURL=main.css.map */
